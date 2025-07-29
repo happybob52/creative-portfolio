@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">Creative Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to my creative space</h1>
+                <p>Designer, developer and lifelong learner.</p>
+                <a href="#projects" class="button-primary">Explore Projects</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Profile picture">
+                    <div>
+                        <p>Hello! I'm a web enthusiast passionate about building intuitive and engaging digital experiences. With a background in design and code, I strive to bring ideas to life through clean layouts, vibrant colour palettes, and seamless interactions. When I'm not coding, I love exploring photography, hiking trails, and reading sci-fi novels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/11035392/pexels-photo-11035392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Project 1" class="project-image">
+                        <h3>Photo Gallery App</h3>
+                        <p>A responsive gallery for showcasing high‑resolution photos with a modern grid layout and smooth animations.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Project 2" class="project-image">
+                        <h3>Task Manager</h3>
+                        <p>An intuitive productivity tool that helps organise tasks, deadlines and progress through a clean interface.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/3861935/pexels-photo-3861935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Project 3" class="project-image">
+                        <h3>Landing Page</h3>
+                        <p>A minimal landing page template built with responsive design in mind, perfect for startups and portfolios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button-primary">Send Message</button>
+                </form>
+                <p id="formSuccess" class="form-success">Thank you for reaching out! I will get back to you soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Creative Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
