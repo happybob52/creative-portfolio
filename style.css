@@ -12,6 +12,23 @@ body {
   background-color: #f7f9fc;
 }
 
+/* Colour palette variables for easy theming */
+:root {
+  --primary: #0b3c5d;
+  --secondary: #328cc1;
+  --accent: #f9a03f;
+  --light-bg: #f7f9fc;
+  --dark-bg: #082f49;
+}
+
+/* Typography using imported Google fonts */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p, a, span, li, label, input, textarea {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Navigation */
 .site-header {
   background-color: #fff;
@@ -35,7 +52,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .nav-links {
@@ -46,13 +63,13 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #0b3c5d;
+  color: var(--primary);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #328cc1;
+  color: var(--secondary);
 }
 
 /* Hero Section */
@@ -100,7 +117,7 @@ body {
 
 .button-primary {
   display: inline-block;
-  background-color: #328cc1;
+  background-color: var(--secondary);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -112,7 +129,7 @@ body {
 }
 
 .button-primary:hover {
-  background-color: #0b3c5d;
+  background-color: var(--primary);
 }
 
 /* Section spacing */
@@ -131,7 +148,7 @@ section {
 .about h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .about-content {
@@ -160,7 +177,7 @@ section {
 .projects h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .project-grid {
@@ -192,7 +209,7 @@ section {
 .project-card h3 {
   font-size: 1.3rem;
   margin: 1rem;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .project-card p {
@@ -205,7 +222,7 @@ section {
 .contact h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .contact-form {
@@ -225,7 +242,7 @@ section {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #0b3c5d;
+  color: var(--primary);
 }
 
 .form-group input,
@@ -250,8 +267,123 @@ section {
 .site-footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #0b3c5d;
+  background-color: var(--primary);
   color: #fff;
+}
+
+/* Services section */
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 250px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Skills section */
+.skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.skill-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.skill-level {
+  background-color: var(--secondary);
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Testimonials section */
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  text-align: center;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial span {
+  display: block;
+  font-weight: 600;
+  color: var(--secondary);
 }
 
 .site-footer p {

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Creative Portfolio</title>
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -14,7 +20,10 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -42,6 +51,55 @@
             </div>
         </section>
 
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fa-solid fa-code service-icon"></i>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and performant websites using modern technologies.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-paint-brush service-icon"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Crafting intuitive and engaging user interfaces with attention to detail.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                        <h3>Mobile Design</h3>
+                        <p>Designing mobile‑first experiences that delight users on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">HTML / CSS</div>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">React</div>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">UX Design</div>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
@@ -61,6 +119,27 @@
                         <img src="https://images.pexels.com/photos/3861935/pexels-photo-3861935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Project 3" class="project-image">
                         <h3>Landing Page</h3>
                         <p>A minimal landing page template built with responsive design in mind, perfect for startups and portfolios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p>"Working with this developer was a fantastic experience. They delivered high‑quality code and were extremely professional."</p>
+                        <span>- Client A</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Their designs are intuitive and beautiful. I highly recommend their services to anyone looking to improve their online presence."</p>
+                        <span>- Client B</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Reliable, creative, and always willing to go the extra mile. I'll definitely work with them again!"</p>
+                        <span>- Client C</span>
                     </div>
                 </div>
             </div>
